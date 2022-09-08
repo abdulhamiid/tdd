@@ -6,7 +6,7 @@ describe Solver do
   end
 
   context 'when factorial method is called' do
-    it "returns the factorial of a given number" do
+    it 'returns the factorial of a given number' do
       expect(@solver.factorial(0)).to eq(1)
       expect(@solver.factorial(1)).to eq(1)
       expect(@solver.factorial(4)).to eq(24)
@@ -15,7 +15,7 @@ describe Solver do
   end
 
   context 'when reverse method is called' do
-    it "returns the reverse value of a string" do
+    it 'returns the reverse value of a string' do
       expect(@solver.reverse('hello')).to eq('olleh')
       expect(@solver.reverse('abdulhamid')).to eq('dimahludba')
       expect(@solver.reverse('felix')).to eq('xilef')
@@ -24,7 +24,7 @@ describe Solver do
   end
 
   context 'when fizzbuzz method is called' do
-    it "returns \"fizz\", \"buzz\", or \"fizzbuzz\" when N is divisible by 3, 5 or 3 & 5 respectively else return N as a string" do
+    it 'returns "fizz, buzz / fizzbuzz" when N is divisible by 3, 5 or 3 & 5 respectively else return string' do
       expect(@solver.fizzbuzz(3)).to eq('fizz')
       expect(@solver.fizzbuzz(6)).to eq('fizz')
       expect(@solver.fizzbuzz(5)).to eq('buzz')
