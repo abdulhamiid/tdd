@@ -10,7 +10,7 @@
 * [License](#📝-license)
 
 ## TDD Project
-> In this project is about implementing a class with some methods, by using test-driven development (TDD). The idea is to write tests first and then the code.
+> This project is about implementing a class with some methods, by using test-driven development (TDD). The idea is to write tests first and then the code.
 
 ## Built With
 
