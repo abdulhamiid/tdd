@@ -1,29 +1,28 @@
 class Solver
-  def factorial(n)
+  def factorial(num)
     factorial = 1
-    if n < 0
-        factorial = 'Invalid input'
+    factorial = 'Invalid input' if num.negative?
+    i = 1
+    while i <= num
+      factorial *= i
+      i += 1
     end
-    i =1
-      while i <= n
-        factorial *= i
-        i+=1
-      end
-      factorial
+    factorial
   end
+
   def reverse(word)
     word.reverse
   end
+
   def fizzbuzz(number)
-    if number % 3 == 0 && number % 5 == 0
+    if (number % 3).zero? && (number % 5).zero?
       'fizzbuzz'
-    elsif number % 3 == 0
+    elsif (number % 3).zero?
       'fizz'
-    elsif number % 5 == 0
+    elsif (number % 5).zero?
       'buzz'
     else
       number.to_s
     end
   end
-
 end
