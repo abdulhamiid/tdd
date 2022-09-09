@@ -11,7 +11,7 @@ describe Solver do
       expect(@solver.factorial(1)).to eq(1)
       expect(@solver.factorial(4)).to eq(24)
       expect(@solver.factorial(5)).to eq(120)
-      expect(@solver.factorial(-1)).to eq('Invalid input')
+      expect { @solver.factorial(-1) }.to raise_error('Number should not be negative')
     end
   end
 

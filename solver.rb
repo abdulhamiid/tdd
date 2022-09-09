@@ -1,7 +1,8 @@
 class Solver
   def factorial(num)
+    raise 'Number should not be negative' if num.negative?
+
     factorial = 1
-    factorial = 'Invalid input' if num.negative?
     i = 1
     while i <= num
       factorial *= i
