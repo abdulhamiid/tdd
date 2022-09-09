@@ -11,6 +11,7 @@ describe Solver do
       expect(@solver.factorial(1)).to eq(1)
       expect(@solver.factorial(4)).to eq(24)
       expect(@solver.factorial(5)).to eq(120)
+      expect(@solver.factorial(-1)).to eq('Invalid input')
     end
   end
 
@@ -18,7 +19,7 @@ describe Solver do
     it 'returns the reverse value of a string' do
       expect(@solver.reverse('hello')).to eq('olleh')
       expect(@solver.reverse('abdulhamid')).to eq('dimahludba')
-      expect(@solver.reverse('felix')).to eq('xilef')
+      expect(@solver.reverse('josphat')).to eq('tahpsoj')
       expect(@solver.reverse('microverse')).to eq('esrevorcim')
     end
   end
